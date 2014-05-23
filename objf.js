@@ -7,11 +7,11 @@ module.exports = function () {
       formatters[id] = that;
     }
     else {
-      // Format an array.
+      // Process an array.
       if (Array.isArray(that)) {
         return Array.prototype.map.call(that, formatters[id]);
       }
-      // Format an object.
+      // Process an object.
       else {
         return formatters[id](that);
       }
