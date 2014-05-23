@@ -3,6 +3,10 @@
   "version": "0.0.1",
   "description": "Light, reusable object formatters (esp. for JSON APIs).",
   "main": "objf.js",
+  "homepage": "https://bitbucket.org/saalaa/objf",
+  "bugs": {
+    "url": "https://bitbucket.org/saalaa/objf/issues"
+  },
   "scripts": {
     "test": "mocha -R spec test.js"
   },
@@ -12,6 +16,13 @@
     "api",
     "object"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git@bitbucket.org:saalaa/objf.git"
+  },
+  "engines": {
+    "node": "~0.10.0"
+  },
   "author": "Benoit Myard <benoit@saalaa.net>",
   "license": "BSD-2-Clause",
   "devDependencies": {
