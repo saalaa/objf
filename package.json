@@ -1,0 +1,21 @@
+{
+  "name": "objf",
+  "version": "0.0.1",
+  "description": "Light, reusable object formatters (esp. for JSON APIs).",
+  "main": "objf.js",
+  "scripts": {
+    "test": "mocha -R spec test.js"
+  },
+  "keywords": [
+    "format",
+    "json",
+    "api",
+    "object"
+  ],
+  "author": "Benoit Myard <benoit@saalaa.net>",
+  "license": "BSD-2-Clause",
+  "devDependencies": {
+    "should": "~3.3.1",
+    "mocha": "~1.19.0"
+  }
+}
