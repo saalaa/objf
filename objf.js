@@ -7,6 +7,11 @@ module.exports = function () {
       formatters[id] = that;
     }
     else {
+      // Provide a friendly error message.
+      if (typeof formatters[id] === 'undefined') {
+        throw new Error('objf/' + id + ' is not defined');
+      }
+
       // Process an array.
       if (Array.isArray(that)) {
         return Array.prototype.map.call(that, formatters[id]);
